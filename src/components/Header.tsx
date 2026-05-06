@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from './common/Button';
 
 interface HeaderProps {
   isDark: boolean;

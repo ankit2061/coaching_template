@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Button } from '../common';
 import content from '../../config/content.json';
 
-export const CTASection: React.FC<{ className?: string }> = ({ className }) => {
+export const CTASection: React.FC = () => {
   const { cta } = content;
 
   return (
@@ -67,7 +67,7 @@ export const CTASection: React.FC<{ className?: string }> = ({ className }) => {
             { icon: '🎓', title: 'Expert Mentors', desc: 'Learn from the best educators in the field' },
             { icon: '📚', title: 'Smart Materials', desc: 'Comprehensive, up-to-date study resources' },
             { icon: '⭐', title: 'Proven Results', desc: 'Consistent top ranks in all major exams' }
-          ].map((item, idx) => (
+          ].map((item) => (
             <motion.div
               key={item.title}
               whileHover={{ y: -5 }}

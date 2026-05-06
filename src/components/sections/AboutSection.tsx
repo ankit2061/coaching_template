@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Section, Card } from '../common';
 import content from '../../config/content.json';
 

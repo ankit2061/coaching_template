@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useTheme } from './hooks';
 import content from './config/content.json';
 import { Header } from './components/Header';
