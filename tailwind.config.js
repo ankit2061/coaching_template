@@ -69,8 +69,49 @@ export default {
         'elevation': '0 20px 40px rgba(0, 0, 0, 0.1)',
         'elevation-lg': '0 30px 60px rgba(0, 0, 0, 0.15)',
       },
+      backdropBlur: {
+        xs: '2px',
+        sm: '8px',
+        md: '10px',
+        lg: '15px',
+      },
     },
   },
   darkMode: 'class',
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.glass': {
+          background: 'rgba(255, 255, 255, 0.25)',
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
+          border: '1px solid rgba(255, 255, 255, 0.18)',
+        },
+        '.dark .glass': {
+          background: 'rgba(15, 23, 42, 0.35)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+        },
+        '.glass-sm': {
+          background: 'rgba(255, 255, 255, 0.2)',
+          backdropFilter: 'blur(8px)',
+          WebkitBackdropFilter: 'blur(8px)',
+          border: '1px solid rgba(255, 255, 255, 0.15)',
+        },
+        '.dark .glass-sm': {
+          background: 'rgba(15, 23, 42, 0.3)',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+        },
+        '.glass-lg': {
+          background: 'rgba(255, 255, 255, 0.3)',
+          backdropFilter: 'blur(15px)',
+          WebkitBackdropFilter: 'blur(15px)',
+          border: '1px solid rgba(255, 255, 255, 0.2)',
+        },
+        '.dark .glass-lg': {
+          background: 'rgba(15, 23, 42, 0.4)',
+          border: '1px solid rgba(255, 255, 255, 0.12)',
+        },
+      });
+    },
+  ],
 }
