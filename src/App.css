@@ -1,0 +1,61 @@
+/* Animation Keyframes */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  75% {
+    transform: translate(50px, 50px) scale(1.05);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(58, 123, 213, 0.5), 0 0 10px rgba(58, 123, 213, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(58, 123, 213, 0.8), 0 0 30px rgba(58, 123, 213, 0.5);
+  }
+}
+
+/* Utility Classes */
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+form input,
+form textarea,
+form select {
+  font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+}
+
+/* Scroll margin for fixed header */
+html {
+  scroll-margin-top: 5rem;
+}
+
+/* Support for smooth scrolling in older browsers */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

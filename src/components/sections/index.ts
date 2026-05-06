@@ -1,0 +1,11 @@
+export { HeroSection } from './HeroSection';
+export { AboutSection } from './AboutSection';
+export { CoursesSection } from './CoursesSection';
+export { WhyChooseUsSection } from './WhyChooseUsSection';
+export { AchievementsSection } from './AchievementsSection';
+export { FacultySection } from './FacultySection';
+export { TestimonialsSection } from './TestimonialsSection';
+export { FAQSection } from './FAQSection';
+export { ContactSection } from './ContactSection';
+export { BranchesSection } from './BranchesSection';
+export { CTASection } from './CTASection';

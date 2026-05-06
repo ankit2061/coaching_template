@@ -1,0 +1,436 @@
+{
+  "site": {
+    "name": "Elite Coaching Academy",
+    "tagline": "Excel in Every Subject, Achieve Your Dreams",
+    "description": "Premium coaching institute preparing students for board exams and competitive entrance exams",
+    "primaryColor": "#3A7BD5",
+    "secondaryColor": "#FF8C42",
+    "phone": "+91 98765 43210",
+    "email": "contact@elitecoaching.com",
+    "address": "123 Education Plaza, Premium City, State 110001",
+    "socialLinks": {
+      "facebook": "https://facebook.com",
+      "instagram": "https://instagram.com",
+      "youtube": "https://youtube.com",
+      "linkedin": "https://linkedin.com"
+    }
+  },
+  
+  "hero": {
+    "title": "Transform Your Academic Future",
+    "subtitle": "Expert guidance for board exams, JEE, NEET & competitive entrance exams",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Students studying together in a modern classroom"
+    },
+    "cta1": {
+      "text": "Book Free Demo",
+      "action": "book-demo"
+    },
+    "cta2": {
+      "text": "Explore All Courses",
+      "action": "explore-courses"
+    },
+    "stats": [
+      {
+        "number": "5000+",
+        "label": "Active Students"
+      },
+      {
+        "number": "98%",
+        "label": "Success Rate"
+      },
+      {
+        "number": "10+",
+        "label": "Years Experience"
+      }
+    ]
+  },
+
+  "about": {
+    "title": "About Us",
+    "description": "Elite Coaching Academy is a premier educational institution dedicated to helping students achieve their academic goals. With a team of experienced faculty and innovative teaching methodologies, we prepare students for success in board exams and competitive entrance exams.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Teacher mentoring students during a study session"
+    },
+    "stats": [
+      {
+        "label": "Top Ranks",
+        "value": "1200+"
+      },
+      {
+        "label": "Demo Sessions",
+        "value": "30,000+"
+      },
+      {
+        "label": "Cities",
+        "value": "18"
+      }
+    ],
+    "highlights": [
+      {
+        "icon": "users",
+        "title": "Expert Faculty",
+        "description": "Experienced educators with proven track records of student success"
+      },
+      {
+        "icon": "book",
+        "title": "Comprehensive Curriculum",
+        "description": "Updated syllabus covering all exam patterns and requirements"
+      },
+      {
+        "icon": "target",
+        "title": "Personalized Learning",
+        "description": "One-on-one mentoring and customized learning plans"
+      },
+      {
+        "icon": "zap",
+        "title": "Advanced Technology",
+        "description": "Interactive classes and digital learning platforms"
+      }
+    ]
+  },
+
+  "courses": [
+    {
+      "id": 1,
+      "name": "Class 10 Board Preparation",
+      "description": "Complete preparation for CBSE Board exams with focus on all subjects",
+      "image": {
+        "src": "/images/school-grade-happy-boy-holding-260nw-2632808601.webp",
+        "alt": "Student holding exam results"
+      },
+      "duration": "1 Year",
+      "price": "₹45,000",
+      "subjects": ["Mathematics", "Science", "English", "Social Studies"],
+      "batches": "Morning & Evening",
+      "icon": "book"
+    },
+    {
+      "id": 2,
+      "name": "Class 12 Board + JEE Foundation",
+      "description": "Dual focus on board exams and JEE entrance examination",
+      "image": {
+        "src": "/images/teacher-classroom-explaining-concepts-using-260nw-2341502997.webp",
+        "alt": "Teacher explaining concepts in class"
+      },
+      "duration": "2 Years",
+      "price": "₹95,000",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "English"],
+      "batches": "Morning & Evening",
+      "icon": "zap"
+    },
+    {
+      "id": 3,
+      "name": "JEE Main & Advanced",
+      "description": "Intensive preparation for India's toughest engineering entrance exam",
+      "image": {
+        "src": "/images/teacher-classroom-explaining-concepts-using-260nw-2341502997.webp",
+        "alt": "Classroom learning session"
+      },
+      "duration": "1.5 Years",
+      "price": "₹1,25,000",
+      "subjects": ["Mathematics", "Physics", "Chemistry"],
+      "batches": "Full Time & Part Time",
+      "icon": "target"
+    },
+    {
+      "id": 4,
+      "name": "NEET Preparation",
+      "description": "Comprehensive medical entrance exam preparation with mock tests",
+      "image": {
+        "src": "/images/school-grade-happy-boy-holding-260nw-2632808601.webp",
+        "alt": "Student celebrating results"
+      },
+      "duration": "1.5 Years",
+      "price": "₹1,15,000",
+      "subjects": ["Biology", "Chemistry", "Physics"],
+      "batches": "Full Time & Part Time",
+      "icon": "health"
+    },
+    {
+      "id": 5,
+      "name": "Foundation Program (Class 9)",
+      "description": "Build strong fundamentals for future competitive exams",
+      "image": {
+        "src": "/images/teacher-classroom-explaining-concepts-using-260nw-2341502997.webp",
+        "alt": "Teacher-led lesson"
+      },
+      "duration": "1 Year",
+      "price": "₹35,000",
+      "subjects": ["Mathematics", "Science", "English"],
+      "batches": "Evening",
+      "icon": "layers"
+    },
+    {
+      "id": 6,
+      "name": "Online Crash Course",
+      "description": "Intensive 3-month preparation for quick revision and doubts clearing",
+      "image": {
+        "src": "/images/school-grade-happy-boy-holding-260nw-2632808601.webp",
+        "alt": "Student with report card"
+      },
+      "duration": "3 Months",
+      "price": "₹25,000",
+      "subjects": ["All Subjects - Flexible"],
+      "batches": "Weekend & Weekdays",
+      "icon": "wifi"
+    }
+  ],
+
+  "whyChooseUs": [
+    {
+      "icon": "award",
+      "title": "Top Ranked Teachers",
+      "description": "Faculty from IIT, NIT with 10+ years of teaching experience"
+    },
+    {
+      "icon": "graduation-cap",
+      "title": "High Success Rate",
+      "description": "98% students qualifying in their respective exams"
+    },
+    {
+      "icon": "chart-up",
+      "title": "Data-Driven Approach",
+      "description": "Track progress with detailed analytics and performance metrics"
+    },
+    {
+      "icon": "users",
+      "title": "Small Batch Size",
+      "description": "Maximum 25 students per batch for personalized attention"
+    },
+    {
+      "icon": "book-open",
+      "title": "Updated Study Material",
+      "description": "Comprehensive notes and practice questions from experts"
+    },
+    {
+      "icon": "monitor",
+      "title": "Hybrid Learning",
+      "description": "Choose between offline classes or online live sessions"
+    }
+  ],
+
+  "achievements": [
+    {
+      "name": "Aarav Sharma",
+      "exam": "JEE Advanced",
+      "rank": "AIR 47",
+      "score": "298/300"
+    },
+    {
+      "name": "Sneha Patel",
+      "exam": "NEET",
+      "rank": "AIR 156",
+      "score": "655/720"
+    },
+    {
+      "name": "Rohan Kumar",
+      "exam": "CBSE Board",
+      "rank": "95%",
+      "score": "475/500"
+    },
+    {
+      "name": "Priya Singh",
+      "exam": "JEE Main",
+      "rank": "Percentile 99.5",
+      "score": "287/300"
+    },
+    {
+      "name": "Arjun Desai",
+      "exam": "NEET",
+      "rank": "AIR 234",
+      "score": "645/720"
+    },
+    {
+      "name": "Zara Khan",
+      "exam": "CBSE Board",
+      "rank": "97%",
+      "score": "483/500"
+    }
+  ],
+
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Dr. Rajesh Verma",
+      "subject": "Mathematics",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "experience": "15+ years",
+      "qualification": "M.Sc from IIT Delhi",
+      "bio": "Expert in problem-solving with innovative teaching methods"
+    },
+    {
+      "id": 2,
+      "name": "Prof. Anjali Sharma",
+      "subject": "Physics",
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=600&q=80",
+      "experience": "12+ years",
+      "qualification": "M.Sc Physics, Ph.D",
+      "bio": "Specialized in conceptual learning and practical applications"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Vikram Patel",
+      "subject": "Chemistry",
+      "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=600&q=80",
+      "experience": "13+ years",
+      "qualification": "M.Tech Chemical Engineering",
+      "bio": "Expert in organic and inorganic chemistry with passion for teaching"
+    },
+    {
+      "id": 4,
+      "name": "Miss Neha Singh",
+      "subject": "Biology",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+      "experience": "10+ years",
+      "qualification": "M.Sc Biology, B.Ed",
+      "bio": "Dedicated to making biology concepts clear and interesting"
+    },
+    {
+      "id": 5,
+      "name": "Mr. Arun Kumar",
+      "subject": "English",
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
+      "experience": "11+ years",
+      "qualification": "M.A English Literature",
+      "bio": "Specialized in competitive exam English and communication skills"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Priya Nair",
+      "subject": "Foundation",
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=600&q=80",
+      "experience": "9+ years",
+      "qualification": "M.Sc Mathematics, Ph.D",
+      "bio": "Expert in building strong fundamentals for young learners"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "name": "Ananya Gupta",
+      "exam": "JEE Advanced",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+      "message": "Elite Academy transformed my understanding of complex concepts. The personalized attention and expert guidance helped me score AIR 89!",
+      "rating": 5
+    },
+    {
+      "name": "Karan Mittal",
+      "exam": "NEET",
+      "avatar": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=400&q=80",
+      "message": "The structured curriculum and regular mock tests prepared me perfectly. I cleared NEET on my first attempt with a great score!",
+      "rating": 5
+    },
+    {
+      "name": "Priya Desai",
+      "exam": "CBSE Board",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+      "message": "Amazing faculty and comprehensive study material. I scored 96% and got admission to my dream college!",
+      "rating": 5
+    },
+    {
+      "name": "Ronak Sharma",
+      "exam": "JEE Main",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+      "message": "The doubt-clearing sessions were extremely helpful. Teachers are always ready to help beyond class timings.",
+      "rating": 5
+    },
+    {
+      "name": "Divya Kumar",
+      "exam": "Foundation Program",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+      "message": "Great foundation program that built my confidence in mathematics and science. Highly recommended for Class 9 students!",
+      "rating": 5
+    }
+  ],
+
+  "branches": [
+    {
+      "id": 1,
+      "name": "Main Campus",
+      "address": "123 Education Plaza, Premium City, State 110001",
+      "phone": "+91 98765 43210",
+      "email": "campus1@elitecoaching.com",
+      "timing": "7:00 AM - 9:00 PM",
+      "coordinates": {
+        "lat": 28.6139,
+        "lng": 77.2090
+      }
+    },
+    {
+      "id": 2,
+      "name": "North Branch",
+      "address": "456 Learning Hub, North City, State 110093",
+      "phone": "+91 98765 43211",
+      "email": "north@elitecoaching.com",
+      "timing": "7:00 AM - 9:00 PM",
+      "coordinates": {
+        "lat": 28.7315,
+        "lng": 77.2167
+      }
+    },
+    {
+      "id": 3,
+      "name": "South Branch",
+      "address": "789 Academic Zone, South City, State 110070",
+      "phone": "+91 98765 43212",
+      "email": "south@elitecoaching.com",
+      "timing": "7:00 AM - 9:00 PM",
+      "coordinates": {
+        "lat": 28.5355,
+        "lng": 77.2230
+      }
+    }
+  ],
+
+  "faq": [
+    {
+      "id": 1,
+      "question": "What is the admission process?",
+      "answer": "Admission at Elite Academy is merit-based. Students need to clear an entrance test and counseling session. You can book a free demo first to understand our teaching methodology."
+    },
+    {
+      "id": 2,
+      "question": "Do you offer online classes?",
+      "answer": "Yes! We offer both offline and online live classes. Students can choose their preferred mode of learning. All online classes are interactive with features like live doubt clearing."
+    },
+    {
+      "id": 3,
+      "question": "What is your refund policy?",
+      "answer": "We offer a 7-day money-back guarantee. If you're not satisfied after attending the first week of classes, we'll refund your entire fee with no questions asked."
+    },
+    {
+      "id": 4,
+      "question": "Do you provide study materials?",
+      "answer": "Yes, comprehensive study materials prepared by our expert faculty are provided for all courses. These include books, notes, practice questions, and previous year solutions."
+    },
+    {
+      "id": 5,
+      "question": "What is the batch size?",
+      "answer": "Our maximum batch size is 25 students to ensure personalized attention. We believe in quality over quantity for better learning outcomes."
+    },
+    {
+      "id": 6,
+      "question": "How often are mock tests conducted?",
+      "answer": "For competitive exam courses, we conduct weekly mock tests. For board exam courses, mock tests are monthly. All results are analyzed and discussed with students."
+    },
+    {
+      "id": 7,
+      "question": "Do you offer one-on-one sessions?",
+      "answer": "Yes, students can opt for paid one-on-one doubt clearing sessions. Faculty members are available after regular class timings for additional help."
+    },
+    {
+      "id": 8,
+      "question": "What payment options are available?",
+      "answer": "We accept all major payment methods including credit cards, debit cards, bank transfers, and digital wallets. EMI options are also available for annual fees."
+    }
+  ],
+
+  "cta": {
+    "title": "Ready to Transform Your Academic Journey?",
+    "subtitle": "Join thousands of successful students who've achieved their dreams",
+    "button": "Book Your Free Demo Today"
+  }
+}

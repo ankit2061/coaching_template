@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+/* ===================================================================
+   TAILWIND v4 — Enable class-based dark mode.
+   Without this, dark: utilities only respond to OS prefers-color-scheme.
+   This makes .dark class on an ancestor activate all dark: utilities.
+   =================================================================== */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ===================================================================
+   TAILWIND v4 THEME — Custom Design Tokens
+   =================================================================== */
+
+@theme {
+  /* ── Primary: Warm Blue (#3A7BD5) ── */
+  --color-primary-50:  #eef4fc;
+  --color-primary-100: #d9e7f9;
+  --color-primary-200: #b5cff3;
+  --color-primary-300: #8ab1ea;
+  --color-primary-400: #5f93e1;
+  --color-primary-500: #3a7bd5;
+  --color-primary-600: #2f66b6;
+  --color-primary-700: #275391;
+  --color-primary-800: #20406d;
+  --color-primary-900: #1b3558;
+  --color-primary-950: #0f1e35;
+
+  /* ── Secondary: Warm Accent (#FF8C42) ── */
+  --color-secondary-50:  #fff4ec;
+  --color-secondary-100: #ffe6d6;
+  --color-secondary-200: #ffcbae;
+  --color-secondary-300: #ffb082;
+  --color-secondary-400: #ff9a5e;
+  --color-secondary-500: #ff8c42;
+  --color-secondary-600: #e6762e;
+  --color-secondary-700: #c25f24;
+  --color-secondary-800: #9c4a1e;
+  --color-secondary-900: #7b3a19;
+  --color-secondary-950: #4a1f0b;
+
+  /* ── Warm neutrals for backgrounds ── */
+  --color-warm-50:  #fff7ed;
+  --color-warm-100: #f8fafc;
+
+  /* ── Dark-mode surface colours (rich, not flat black) ── */
+  --color-dark-base:    #0c1222;
+  --color-dark-surface: #111827;
+  --color-dark-card:    #1a2332;
+  --color-dark-elevated:#1f2b3d;
+
+  /* ── Custom box-shadows ── */
+  --shadow-glass:        0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --shadow-glass-dark:   0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  --shadow-elevation:    0 20px 40px rgba(0, 0, 0, 0.1);
+  --shadow-elevation-lg: 0 30px 60px rgba(0, 0, 0, 0.15);
+
+  /* ── Custom animations ── */
+  --animate-float:    float 3s ease-in-out infinite;
+  --animate-glow:     glow 2s ease-in-out infinite;
+  --animate-slide-in: slideIn 0.5s ease-out;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%      { transform: translateY(-20px); }
+  }
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(58, 123, 213, 0.5); }
+    50%      { box-shadow: 0 0 20px rgba(58, 123, 213, 0.8); }
+  }
+  @keyframes slideIn {
+    0%   { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0);     opacity: 1; }
+  }
+}
+
+/* ===================================================================
+   GLOBAL RESETS & BASE STYLES
+   =================================================================== */
+
+* {
+  @apply transition-colors duration-300 ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-warm-100 text-slate-900;
+  margin: 0;
+}
+
+/* ===================================================================
+   UTILITY CLASSES
+   =================================================================== */
+
+/* Subtle grid background — dims in dark mode */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at top, rgba(0, 0, 0, 0.85), transparent 70%);
+}
+.dark .bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(58, 123, 213, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(58, 123, 213, 0.08) 1px, transparent 1px);
+}
+
+/* Gradient border (primary → secondary) */
+.gradient-border {
+  background:
+    linear-gradient(120deg, rgba(58, 123, 213, 0.30), rgba(255, 140, 66, 0.30)) padding-box,
+    linear-gradient(120deg, rgba(58, 123, 213, 0.60), rgba(255, 140, 66, 0.60)) border-box;
+  border: 1px solid transparent;
+}
+.dark .gradient-border {
+  background:
+    linear-gradient(120deg, rgba(58, 123, 213, 0.15), rgba(255, 140, 66, 0.15)) padding-box,
+    linear-gradient(120deg, rgba(58, 123, 213, 0.40), rgba(255, 140, 66, 0.40)) border-box;
+}
+
+/* Depth shadow for hero image etc. */
+.soft-shadow {
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.15);
+}
+.dark .soft-shadow {
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.50);
+}
+
+/* ── Glassmorphism ── */
+.glass {
+  @apply backdrop-blur-md border;
+  background: rgba(255, 255, 255, 0.70);
+  border-color: rgba(255, 255, 255, 0.30);
+}
+.dark .glass {
+  background: rgba(26, 35, 50, 0.75);
+  border-color: rgba(58, 123, 213, 0.15);
+}
+
+.glass-dark {
+  @apply backdrop-blur-md border;
+  background: rgba(15, 23, 42, 0.40);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+.dark .glass-dark {
+  background: rgba(12, 18, 34, 0.80);
+  border-color: rgba(58, 123, 213, 0.10);
+}
+
+/* ===================================================================
+   ENTRANCE ANIMATIONS
+   =================================================================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in        { animation: fadeIn       0.6s ease-out; }
+.animate-slide-up       { animation: slideUp      0.6s ease-out; }
+.animate-slide-in-left  { animation: slideInLeft  0.6s ease-out; }
+.animate-slide-in-right { animation: slideInRight 0.6s ease-out; }
